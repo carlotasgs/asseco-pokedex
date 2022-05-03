@@ -5,7 +5,7 @@ let pokemonJson = [];
 const pokemons = async function () {
   try {
     const poke = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=150`);
-    if (!poke.ok) throw new Error("Problem getting location poke");
+    if (!poke.ok) throw new Error("Problem getting poke");
     const pokeJson = await poke.json();
     pokemonJson = pokeJson.results;
     renderPokemon(pokeJson.results);
