@@ -14,7 +14,33 @@
       rel="stylesheet"
     />
   </head>
+  <style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #f7fafc;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 10px solid rgba(151, 150, 150, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  </style>
+  <header>
+    <div>
+      <form>
+        <input type="text" id="myInput" onkeyup="mySearchFunction()" placeholder="Introduza um nome...">
+      </form>
+    </div>
+  </header>
   <body>
+    <div class="grid-container">
+    </div>
+  </table>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
